@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Playground</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/border-horizontal.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://img.icons8.com/nolan/64/border-horizontal.png" alt="icon">
+        <h1>Border Radius Playground</h1>
+    </header>
+    <main>
+        <div id="squareDiv" class="saqureDiv">
+            <div class="top-inputs">
+                <input type="number" min="0" step="5" id="border-top-left" placeholder="border top left radius">
+                <input type="number" min="0" step="5" id="border-start-start-radius"
+                    placeholder="border start start radius">
+                <input type="number" min="0" step="5" id="border-start-end-radius"
+                    placeholder="border start end radius">
+                <input type="number" min="0" step="5" id="border-top-right" placeholder="border top right radius">
+            </div>
+            <div class="metrics" id="metrics">
+                <div id="square"></div>
+            </div>
+            <div class="bottom-inputs">
+                <input type="number" min="0" step="5" id="border-bottom-left" placeholder="border bottom left radius">
+                <input type="number" min="0" step="5" id="border-end-start-radius"
+                    placeholder="border end start radius">
+                <input type="number" min="0" step="5" id="border-end-end-radius" placeholder="border end end radius">
+                <input type="number" min="0" step="5" id="border-bottom-right" placeholder="border bottom right radius">
+            </div>
+        </div>
+        <div class="options">
+            <h3>Set width and height of the square. <em>Max: 700</em></h3>
+            <div class="width-height">
+                <input type="number" min="0" max="700" step="5" id="width" placeholder="width...">
+                <span>X</span>
+                <input type="number" min="0" max="650" step="5" id="height" placeholder="height...">
+            </div>
+
+            <h3>Enable Metrics</h3>
+            <button class="" id="metricsBut">Turn On</button>
+        </div>
+        <div class="cssBorder" id="cssBorder">
+            <h3>Get the <em>complete</em> CSS for the <span>Border-Radius</span> property</h3>
+            <textarea readonly tabindex="1" id="cssText" cols="30" rows="10">
+            </textarea>
+            <button id="copyBut">Copy CSS</button>
+        </div>
+    </main>
+    <footer>
+        <p>created by: <em>Victoria Luquet</em></p>
+    </footer>
+</body>
+
+</html>
